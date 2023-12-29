@@ -1,0 +1,80 @@
+/* Penyesuaian untuk memusatkan gambar ke bawah pada layar kecil */
+.about-page {
+    margin-top: 50px;
+}
+
+.image-about {
+    display: block;
+    margin: auto;
+    margin-top: 20px; /* Atur jarak atas gambar pada layar kecil */
+    width: 439px;
+    height: 380px;
+    top: 1350px;
+    left: 169px;
+    border-radius: 45px 250px 45px 45px;
+}
+
+.about-title {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.card-about {
+    margin-left: 50px;
+}
+
+.card-about:hover,
+.card-about2:hover,
+.card-about4:hover {
+    background-color: #fff4cc;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media query untuk responsif pada lebar layar maksimum 768px */
+@media (max-width: 768px) {
+    .about {
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    .card-about {
+        margin-left: 0px;
+    }
+
+    .about-card {
+        margin-top: 40px;
+    }
+
+    .card-about {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1285px) {
+    .card-about {
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,21 @@
+.sidebar-informasi {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.sidebar-informasi-menu {
+    padding: 15px;
+}
+
+.sidebar-informasi-menu svg {
+    margin-right: 20px;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.sidebar-informasi-menu:hover {
+    color: #ffa506;
+
+    cursor: pointer;
+}

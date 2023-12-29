@@ -1,0 +1,35 @@
+.link-nav {
+    display: flex;
+    gap: 50px;
+}
+
+.link-nav .nav-link {
+    text-align: center;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: color 0.2s ease;
+    color: black;
+}
+
+.link-nav .nav-link:hover {
+    color: #ffffff;
+    background-color: #ffa506;
+    border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+    .link-nav {
+        gap: 10px;
+        flex-direction: column; /* Menata link secara vertikal pada layar kecil */
+        align-items: center; /* Memusatkan link pada layar kecil */
+    }
+
+    .link-nav .nav-link {
+        margin-right: 0; /* Menghapus margin-right pada layar kecil */
+        margin-bottom: 10px; /* Menambahkan margin-bottom pada layar kecil */
+    }
+    .navbar-button {
+        display: block;
+        margin: 0 auto; /* Membuat tombol menjadi pusat */
+    }
+}

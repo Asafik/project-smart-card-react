@@ -1,0 +1,122 @@
+/* footer */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer img {
+    width: 200px;
+}
+/* CSS Stylesheet */
+.logo-text {
+    font-size: 16px; /* Ganti ukuran font sesuai keinginan Anda */
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* File CSS Anda, misalnya Footer.css */
+.footer-container {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.footer-line {
+    margin-top: -30px; /* Adjust the value as needed to move the line up */
+    border: 0; /* Remove the border to hide it */
+    border-top: 3px solid #ffffff; /* Add a top border style if needed */
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 34px;
+    margin-right: 30px;
+    color: #aeaeae;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #ffffff; /* Warna saat hover */
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+    .logo-text {
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    img {
+        width: 150px;
+    }
+}
+
+/* CSS Stylesheet */
+@media (max-width: 576px) {
+    .contact-item {
+        margin: 0px 0; /* Mengurangi jarak antara item kontak pada layar kecil */
+        padding: 2px 0; /* Anda juga dapat mengurangi padding jika diperlukan */
+    }
+
+    .contact-icon {
+        font-size: 24px; /* Atur ukuran font ikon untuk semua ikon kontak */
+    }
+
+    .map-icon {
+        font-size: 55px; /* Atur ukuran font ikon FaMapMarkedAlt sesuai dengan yang Anda inginkan */
+    }
+
+    .contact-item a {
+        font-size: 14px; /* Atur ukuran font teks link (ganti dengan ukuran yang Anda inginkan) */
+    }
+
+    .footer-line {
+        margin-top: 0; /* Mengurangi margin atas hr untuk memindahkan garis ke atas */
+        margin-top: -20px; /* Menambah margin bawah hr (sesuaikan sesuai kebutuhan Anda) */
+    }
+}
+
+@media (max-width: 991px) {
+    .footer img {
+        width: 200px;
+    }
+
+    .logo-text {
+        font-size: 13px; /* Mengurangi ukuran font logo pada layar kecil */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* Footer */

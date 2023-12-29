@@ -1,0 +1,18 @@
+.sidebar {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.menu-sidebar {
+    padding: 15px;
+}
+
+.menu-sidebar svg {
+    margin-right: 15px;
+}
+
+.menu-sidebar:hover {
+    background-color: #ffa506;
+    color: white;
+    cursor: pointer;
+}
