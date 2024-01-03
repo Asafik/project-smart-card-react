@@ -13,6 +13,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Typography from '@mui/material/Typography';
 import { MdOutlineDashboard } from 'react-icons/md';
 import { FaList } from 'react-icons/fa';
+import { FiLogOut } from 'react-icons/fi';
 
 import DashboardContent from '../../Pages/Dashboard/DashboardContent';
 import ListKategoriContent from '../../Pages/Dashboard/ListKategoriContent';
@@ -20,6 +21,7 @@ import ListProdukContent from '../../Pages/Dashboard/ListProdukContent';
 
 import './Style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'react-bootstrap';
 
 const drawerWidth = 200;
 
@@ -183,8 +185,13 @@ const Sidebar = () => {
                         className='menu-sidebar'
                         onClick={() => setSelectedMenu('list Produk')}
                     >
-                        {' '}
                         <FaList /> List Produk
+                    </div>
+
+                    <div className='keluar-menu'>
+                        <Button>
+                            <FiLogOut /> Keluar
+                        </Button>
                     </div>
                 </div>
             </Drawer>

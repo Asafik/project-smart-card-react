@@ -22,7 +22,6 @@ const Home = () => {
                                         fontWeight: 700,
                                         fontSize: '72px',
                                         lineHeight: '108px',
-
                                     }}
                                 >
                                     Smart Card

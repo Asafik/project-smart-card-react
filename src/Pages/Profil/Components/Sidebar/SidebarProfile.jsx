@@ -27,7 +27,6 @@ import KoleksiSaya from '../../Koleksi/KoleksiSaya';
 import Notifikasi from '../../Notifikasi/Notifikasi';
 import UbahKataSandi from '../../ChangePassword/UbahKataSandi';
 
-
 import './sidebarprofil.css';
 
 const drawerWidth = 250;
@@ -166,12 +165,10 @@ const Sidebar = () => {
                             marginRight: '20px',
                         }}
                     >
-                       <Navbar.Brand href="/"> <img
-                        src='assets/logo.png'
-                        alt='logo'
-                        width={120}
-                       
-                    /></Navbar.Brand>
+                        <Navbar.Brand href='/'>
+                            {' '}
+                            <img src='assets/logo.png' alt='logo' width={120} />
+                        </Navbar.Brand>
                     </div>
                     <IconButton color='black' onClick={handleDrawerClose}>
                         {theme.direction === 'ltr' ? (

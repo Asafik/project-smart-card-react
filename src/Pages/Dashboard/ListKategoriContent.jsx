@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Modal, Form, Table } from 'react-bootstrap';
+import { Form, Table, Button, Modal } from 'react-bootstrap';
 import { FiPlusCircle } from 'react-icons/fi';
 
 import { FaRegEdit } from 'react-icons/fa';
@@ -7,31 +7,9 @@ import { FaRegTrashAlt } from 'react-icons/fa';
 
 const ListKategoriContent = () => {
     const [showModal, setShowModal] = useState(false);
-    const [categoryData, setCategoryData] = useState({
-        name: '',
-        description: '',
-        image: null,
-    });
-    const [data, setData] = useState([
-        { name: 'Category 1', description: 'Description 1', image: null },
-        { name: 'Category 2', description: 'Description 2', image: null },
-    ]);
-
-    const [editIndex, setEditIndex] = useState(null);
-
-    const handleInputChange = (e) => {
-        const { name, value, files } = e.target;
-        setCategoryData({
-            ...categoryData,
-            [name]: files ? files[0] : value,
-        });
-    };
 
     const handleShowModal = () => setShowModal(true);
-    const handleCloseModal = () => {
-        setShowModal(false);
-        setEditIndex(null);
-    };
+    const handleCloseModal = () => setShowModal(false);
 
     return (
         <>
@@ -39,39 +17,37 @@ const ListKategoriContent = () => {
                 className='shadow p-3 mb-5 bg-white rounded'
                 style={{ marginTop: 50 }}
             >
-                <div className='input-group mb-3'>
-                    <input
-                        type='text'
-                        className='form-control'
-                        placeholder='Search Divisi'
-                        aria-label='Search Divisi'
-                        aria-describedby='search-button'
-                    />
-                    <div
-                        className='input-group-append'
-                        style={{ marginRight: 30 }}
-                    >
-                        <button
-                            className='btn btn-outline-secondary'
-                            type='button'
-                            id='search-button'
-                        >
-                            Search
-                        </button>
+                <div className='d-flex justify-content-end'>
+                    <div className='me-3'>
+                        <Form>
+                            <Form.Group controlId='searchTerm' className='mb-3'>
+                                <Form.Control
+                                    type='text'
+                                    placeholder='Cari...'
+                                />
+                            </Form.Group>
+                        </Form>
                     </div>
-                    <Button
-                        onClick={() => setShowModal(true)}
-                        variant='warning text-white fw-bold'
-                        style={{
-                            borderRadius: '8px',
-                        }}
-                    >
-                        <FiPlusCircle
-                            style={{ marginRight: 10, fontSize: '17px' }}
-                        />{' '}
-                        Tambah Produk
-                    </Button>
+
+                    <div>
+                        <Button
+                            variant='warning text-white fw-bold'
+                            style={{
+                                borderRadius: '8px',
+                            }}
+                            onClick={handleShowModal}
+                        >
+                            <FiPlusCircle
+                                style={{
+                                    marginRight: 10,
+                                    fontSize: '17px',
+                                }}
+                            />
+                            Tambah Kategori
+                        </Button>
+                    </div>
                 </div>
+
                 <hr />
 
                 <Table striped bordered hover>
@@ -80,8 +56,8 @@ const ListKategoriContent = () => {
                             <th style={{ width: '5%', textAlign: 'center' }}>
                                 No
                             </th>
-                            <th style={{ width: '15%', textAlign: 'center' }}>
-                                Nama Kategori
+                            <th style={{ width: '10%', textAlign: 'center' }}>
+                                Name
                             </th>
                             <th style={{ width: '15%', textAlign: 'center' }}>
                                 Gambar
@@ -89,109 +65,87 @@ const ListKategoriContent = () => {
                             <th style={{ width: '40%', textAlign: 'center' }}>
                                 Deskripsi
                             </th>
-                            <th style={{ width: '20%', textAlign: 'center' }}>
+                          
+                            <th style={{ width: '10%', textAlign: 'center' }}>
                                 Action
                             </th>
                         </tr>
                     </thead>
                     <tbody style={{ textAlign: 'center' }}>
-                        {data.map((category, index) => (
-                            <tr key={index}>
-                                <td>{index + 1}</td>
-                                <td>{category.name}</td>
-                                <td>
-                                    {category.image && (
-                                        <img
-                                            src={URL.createObjectURL(
-                                                category.image,
-                                            )}
-                                            alt={`Category ${index + 1}`}
-                                            style={{
-                                                maxWidth: '100px',
-                                                maxHeight: '100px',
-                                            }}
-                                        />
-                                    )}
-                                </td>
-                                <td>{category.description}</td>
-                                <td>
-                                    <Button
-                                        variant='info'
-                                        style={{
-                                            marginRight: 10,
-                                            backgroundColor: 'transparent',
-                                            border: '1px solid black',
-                                        }}
-                                    >
-                                        <FaRegEdit className='dark' />
-                                    </Button>
-                                    <Button
-                                        variant='info'
-                                        style={{
-                                            marginRight: 10,
-                                            backgroundColor: 'transparent',
-                                            border: '1px solid black',
-                                        }}
-                                    >
-                                        <FaRegTrashAlt />
-                                    </Button>
-                                </td>
-                            </tr>
-                        ))}
+                        <tr>
+                            <td>1</td>
+                            <td>Hewan</td>
+                            <td>
+                                <img
+                                    src=''
+                                    alt=''
+                                    style={{
+                                        maxWidth: '70px',
+                                        maxHeight: '70px',
+                                    }}
+                                />
+                            </td>
+                           
+                            
+                            <td></td>
+                            <td>
+                                <Button
+                                    variant='info'
+                                    style={{
+                                        marginRight: 10,
+                                        backgroundColor: 'transparent',
+                                        border: '1px solid black',
+                                    }}
+                                >
+                                    <FaRegEdit />
+                                </Button>
+                                <Button
+                                    variant='info'
+                                    style={{
+                                        backgroundColor: 'transparent',
+                                        border: '1px solid black',
+                                        marginRight: 10,
+                                    }}
+                                >
+                                    <FaRegTrashAlt />
+                                </Button>
+                            </td>
+                        </tr>
                     </tbody>
                 </Table>
             </div>
 
-            <Modal
-                show={showModal}
-                onHide={handleCloseModal}
-                style={{ marginTop: 40 }}
-            >
+            {/* Modal Tambah Produk */}
+            <Modal show={showModal} onHide={handleCloseModal} className='mt-5'>
                 <Modal.Header closeButton>
-                    <Modal.Title>
-                        {editIndex !== null ? 'Edit' : 'Tambah'} Kategori
-                    </Modal.Title>
+                    <Modal.Title>Tambah Produk</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form>
-                        <Form.Group controlId='formCategoryName'>
-                            <Form.Label>Nama Kategori</Form.Label>
-                            <Form.Control
-                                type='text'
-                                placeholder='Enter category name'
-                                name='name'
-                                value={categoryData.name}
-                                onChange={handleInputChange}
-                            />
+                        <Form.Group controlId='productName'>
+                            <Form.Label>Kategori</Form.Label>
+                            <Form.Control type='text' />
                         </Form.Group>
-                        <Form.Group controlId='formCategoryImage'>
-                            <Form.Label>Upload Image</Form.Label>
-                            <Form.Control
-                                type='file'
-                                accept='image/*'
-                                name='image'
-                                onChange={handleInputChange}
-                            />
+                        <Form.Group controlId='productImage'>
+                            <Form.Label>Gambar</Form.Label>
+                            {/* Menggunakan input file untuk mengunggah gambar */}
+                            <Form.Control type='file' accept='image/*' />
                         </Form.Group>
-                        <Form.Group controlId='formCategoryDescription'>
+                       
+                       
+                     
+                        <Form.Group controlId='productQuantity'>
                             <Form.Label>Deskripsi</Form.Label>
-                            <Form.Control
-                                as='textarea'
-                                rows={3}
-                                placeholder='Enter category description'
-                                name='description'
-                                value={categoryData.description}
-                                onChange={handleInputChange}
-                            />
+                            <Form.Control type='text' />
                         </Form.Group>
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant='secondary' onClick={handleCloseModal}>
-                        Close
+                        Tutup
                     </Button>
-                    <Button variant='primary'>
-                        {editIndex !== null ? 'Edit' : 'Tambah'} Kategori
+                    <Button variant='primary' onClick={handleCloseModal}>
+                        Simpan
                     </Button>
                 </Modal.Footer>
             </Modal>
