@@ -1,0 +1,4 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-display: swap; /* swap akan menggunakan font cadangan jika font utama tidak tersedia */
+}

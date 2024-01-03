@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Button, Modal, Form, Table } from 'react-bootstrap';
 import { FiPlusCircle } from 'react-icons/fi';
 
-import { FaRegEdit } from "react-icons/fa";
-import { FaRegTrashAlt } from "react-icons/fa";
+import { FaRegEdit } from 'react-icons/fa';
+import { FaRegTrashAlt } from 'react-icons/fa';
 
 const ListProdukContent = () => {
     const [showModal, setShowModal] = useState(false);
@@ -57,10 +57,17 @@ const ListProdukContent = () => {
                             Search
                         </button>
                     </div>
-                    <Button onClick={() => setShowModal(true)} variant='warning text-white fw-bold' style={{ 
-                        borderRadius: '8px'
-                     }}>
-                        <FiPlusCircle style={{ marginRight: 10, fontSize: '17px' }} /> Tambah Produk
+                    <Button
+                        onClick={() => setShowModal(true)}
+                        variant='warning text-white fw-bold'
+                        style={{
+                            borderRadius: '8px',
+                        }}
+                    >
+                        <FiPlusCircle
+                            style={{ marginRight: 10, fontSize: '17px' }}
+                        />{' '}
+                        Tambah Produk
                     </Button>
                 </div>
                 <hr />
@@ -108,11 +115,24 @@ const ListProdukContent = () => {
                                 <td>
                                     <Button
                                         variant='info'
-                                        style={{ marginRight: 10, backgroundColor : 'transparent', border: '1px solid black'  }}
+                                        style={{
+                                            marginRight: 10,
+                                            backgroundColor: 'transparent',
+                                            border: '1px solid black',
+                                        }}
                                     >
-                                        <FaRegEdit className='dark'/>
+                                        <FaRegEdit className='dark' />
                                     </Button>
-                                    <Button variant='info'  style={{ marginRight: 10, backgroundColor : 'transparent', border: '1px solid black'  }}><FaRegTrashAlt/></Button>
+                                    <Button
+                                        variant='info'
+                                        style={{
+                                            marginRight: 10,
+                                            backgroundColor: 'transparent',
+                                            border: '1px solid black',
+                                        }}
+                                    >
+                                        <FaRegTrashAlt />
+                                    </Button>
                                 </td>
                             </tr>
                         ))}

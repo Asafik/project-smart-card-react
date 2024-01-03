@@ -19,21 +19,21 @@ const UbahKataSandi = () => {
                     <Form>
                         <Form.Group controlId='formKataSandiLama'>
                             <Form.Label>Kata Sandi Lama</Form.Label>
-                            <Form.Control type='password' />
+                            <Form.Control type='password' style={{ border: '1px solid black' }} />
                         </Form.Group>
 
                         <Form.Group controlId='formKataSandiBaru'>
                             <Form.Label style={{ marginTop: '20px' }}>
                                 Kata Sandi Baru
                             </Form.Label>
-                            <Form.Control type='password' />
+                            <Form.Control type='password' style={{ border: '1px solid black' }} />
                         </Form.Group>
 
                         <Form.Group controlId='formKonfirmasiKataSandiBaru'>
                             <Form.Label style={{ marginTop: '20px' }}>
                                 Konfirmasi Kata Sandi Baru
                             </Form.Label>
-                            <Form.Control type='password' />
+                            <Form.Control type='password' style={{ border: '1px solid black' }} />
                         </Form.Group>
 
                         <Button

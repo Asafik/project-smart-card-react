@@ -5,7 +5,6 @@ import Footer from '../../Components/Footer/Footer';
 import { FaStar } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-
 import './product.css';
 
 const Product = () => {
@@ -65,10 +64,12 @@ const Product = () => {
                                         Rp. 30.000
                                     </Card.Text>
                                     <div>
-                                        <Link to="/detail-produk">
-                                        <Button variant='warning text-white fw-bold'>Beli Sekarang</Button>
+                                        <Link to='/detail-produk'>
+                                            <Button variant='warning text-white fw-bold'>
+                                                Beli Sekarang
+                                            </Button>
                                         </Link>
-                                       </div>
+                                    </div>
                                 </div>
                             </Card.Body>
                         </Card>
@@ -114,10 +115,12 @@ const Product = () => {
                                         Rp. 30.000
                                     </Card.Text>
                                     <div>
-                                        <Link to="/detail-produk">
-                                        <Button variant='warning text-white fw-bold'>Beli Sekarang</Button>
+                                        <Link to='/detail-produk'>
+                                            <Button variant='warning text-white fw-bold'>
+                                                Beli Sekarang
+                                            </Button>
                                         </Link>
-                                       </div>
+                                    </div>
                                 </div>
                             </Card.Body>
                         </Card>
@@ -162,10 +165,12 @@ const Product = () => {
                                         Rp. 30.000
                                     </Card.Text>
                                     <div>
-                                        <Link to="/detail-produk">
-                                        <Button variant='warning text-white fw-bold'>Beli Sekarang</Button>
+                                        <Link to='/detail-produk'>
+                                            <Button variant='warning text-white fw-bold'>
+                                                Beli Sekarang
+                                            </Button>
                                         </Link>
-                                       </div>
+                                    </div>
                                 </div>
                             </Card.Body>
                         </Card>
@@ -210,10 +215,12 @@ const Product = () => {
                                         Rp. 30.000
                                     </Card.Text>
                                     <div>
-                                        <Link to="/detail-produk">
-                                        <Button variant='warning text-white fw-bold'>Beli Sekarang</Button>
+                                        <Link to='/detail-produk'>
+                                            <Button variant='warning text-white fw-bold'>
+                                                Beli Sekarang
+                                            </Button>
                                         </Link>
-                                       </div>
+                                    </div>
                                 </div>
                             </Card.Body>
                         </Card>
@@ -258,10 +265,12 @@ const Product = () => {
                                         Rp. 30.000
                                     </Card.Text>
                                     <div>
-                                        <Link to="/detail-produk">
-                                        <Button variant='warning text-white fw-bold'>Beli Sekarang</Button>
+                                        <Link to='/detail-produk'>
+                                            <Button variant='warning text-white fw-bold'>
+                                                Beli Sekarang
+                                            </Button>
                                         </Link>
-                                       </div>
+                                    </div>
                                 </div>
                             </Card.Body>
                         </Card>

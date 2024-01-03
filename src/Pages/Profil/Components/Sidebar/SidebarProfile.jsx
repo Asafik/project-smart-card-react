@@ -21,11 +21,12 @@ import {
     AiOutlineLogout,
 } from 'react-icons/ai';
 import { FaChevronLeft } from 'react-icons/fa';
-import { Button, Modal } from 'react-bootstrap';
+import { Button, Modal, Navbar } from 'react-bootstrap';
 import Informasi from '../../Informasi/Informasi';
 import KoleksiSaya from '../../Koleksi/KoleksiSaya';
 import Notifikasi from '../../Notifikasi/Notifikasi';
 import UbahKataSandi from '../../ChangePassword/UbahKataSandi';
+
 
 import './sidebarprofil.css';
 
@@ -165,10 +166,12 @@ const Sidebar = () => {
                             marginRight: '20px',
                         }}
                     >
-                        <Button>
-                            <FaChevronLeft style={{ marginRight: '10px' }} />{' '}
-                            Kembali
-                        </Button>
+                       <Navbar.Brand href="/"> <img
+                        src='assets/logo.png'
+                        alt='logo'
+                        width={120}
+                       
+                    /></Navbar.Brand>
                     </div>
                     <IconButton color='black' onClick={handleDrawerClose}>
                         {theme.direction === 'ltr' ? (

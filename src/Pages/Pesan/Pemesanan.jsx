@@ -172,22 +172,26 @@ const Pemesanan = () => {
                                     </div>
 
                                     <div className='d-flex justify-content-center'>
-  <Link to="/detail-produk">
-    <Button variant='secondary' className='me-2 fw-bold' style={{ width: '250px' }}>
-      Kembali
-    </Button>
-  </Link>
-  <Link to="/pembayaran">
-    <Button
-      variant='warning'
-      className='text-white fw-bold'
-      type='submit'
-      style={{ width: '250px' }}
-    >
-      Pesan
-    </Button>
-  </Link>
-</div>
+                                        <Link to='/detail-produk'>
+                                            <Button
+                                                variant='secondary'
+                                                className='me-2 fw-bold'
+                                                style={{ width: '250px' }}
+                                            >
+                                                Kembali
+                                            </Button>
+                                        </Link>
+                                        <Link to='/pembayaran'>
+                                            <Button
+                                                variant='warning'
+                                                className='text-white fw-bold'
+                                                type='submit'
+                                                style={{ width: '250px' }}
+                                            >
+                                                Pesan
+                                            </Button>
+                                        </Link>
+                                    </div>
                                 </Form>
                             </Card.Body>
                         </Card>

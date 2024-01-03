@@ -18,7 +18,7 @@ const Status = () => {
             >
                 <Card
                     className='shadow mx-auto'
-                    style={{ maxWidth: '500px', borderRadius: '10px' }}
+                    style={{ maxWidth: '530px', borderRadius: '10px' }}
                 >
                     <Card.Body className='text-center'>
                         <Row>
@@ -95,7 +95,7 @@ const Status = () => {
                 <Card
                     className='shadow mx-auto'
                     style={{
-                        maxWidth: '500px',
+                        maxWidth: '530px',
                         borderRadius: '10px',
                         marginTop: '10px',
                         padding: '15px',

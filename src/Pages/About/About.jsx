@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
-import { FiArrowUpRight } from "react-icons/fi";
-import { FaArrowRight } from "react-icons/fa6";
+import { FiArrowUpRight } from 'react-icons/fi';
+import { FaArrowRight } from 'react-icons/fa6';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -64,16 +64,19 @@ const Home = () => {
                                                 className='fw-bold'
                                                 style={{
                                                     alignSelf: 'flex-start',
-                                                    backgroundColor:'transparent',
+                                                    backgroundColor:
+                                                        'transparent',
                                                     color: 'black',
                                                     border: '1px solid black',
-                                                    borderRadius: '30px'
+                                                    borderRadius: '30px',
                                                 }}
                                             >
                                                 Selengkapnya{' '}
                                                 <FiArrowUpRight
-                                                    style={{ marginLeft: 10,
-                                                    fontSize: '25px' }}
+                                                    style={{
+                                                        marginLeft: 10,
+                                                        fontSize: '25px',
+                                                    }}
                                                 />
                                             </Button>
                                         </Col>
@@ -106,21 +109,23 @@ const Home = () => {
                                         similique nam odit obcaecati.
                                     </p>
                                     <Button
-                                                className='fw-bold'
-                                                style={{
-                                                    alignSelf: 'flex-start',
-                                                    backgroundColor:'transparent',
-                                                    color: 'black',
-                                                    border: '1px solid black',
-                                                    borderRadius: '30px'
-                                                }}
-                                            >
-                                                Lihat Semua Produk
-                                                <FaArrowRight
-                                                    style={{ marginLeft: 10,
-                                                    fontSize: '25px' }}
-                                                />
-                                            </Button>
+                                        className='fw-bold'
+                                        style={{
+                                            alignSelf: 'flex-start',
+                                            backgroundColor: 'transparent',
+                                            color: 'black',
+                                            border: '1px solid black',
+                                            borderRadius: '30px',
+                                        }}
+                                    >
+                                        Lihat Semua Produk
+                                        <FaArrowRight
+                                            style={{
+                                                marginLeft: 10,
+                                                fontSize: '25px',
+                                            }}
+                                        />
+                                    </Button>
                                 </div>
                             </Col>
 
@@ -263,24 +268,28 @@ const Home = () => {
                                                 className='text-justify mb-2 fw-bold'
                                                 style={{ fontSize: '3rem' }}
                                             >
-                                                Belajar Lebih Mudah dan Asik Dengan smart Card
+                                                Belajar Lebih Mudah dan Asik
+                                                Dengan smart Card
                                             </h1>
-                                           
+
                                             <Button
                                                 className='fw-bold'
                                                 style={{
                                                     alignSelf: 'flex-start',
-                                                    backgroundColor:'transparent',
+                                                    backgroundColor:
+                                                        'transparent',
                                                     color: 'black',
                                                     border: '1px solid black',
-                                                    borderRadius: '30px', 
-                                                    marginTop: '20px'
+                                                    borderRadius: '30px',
+                                                    marginTop: '20px',
                                                 }}
                                             >
                                                 Selengkapnya{' '}
                                                 <FiArrowUpRight
-                                                    style={{ marginLeft: 10,
-                                                    fontSize: '25px' }}
+                                                    style={{
+                                                        marginLeft: 10,
+                                                        fontSize: '25px',
+                                                    }}
                                                 />
                                             </Button>
                                         </Col>

@@ -4,7 +4,6 @@ import { FaCheckCircle, FaChevronLeft } from 'react-icons/fa';
 import { PiNumberCircleThreeLight } from 'react-icons/pi';
 import { Link } from 'react-router-dom';
 
-
 import Footer from '../../Components/Footer/Footer';
 
 const Petunjuk = () => {
@@ -184,13 +183,22 @@ const Petunjuk = () => {
                                 </Accordion.Body>
                             </Accordion.Item>
                         </Accordion>
-                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-  <Link to="/selesai">
-    <Button style={{ width: '200px' }} className='btn-warning text-white fw-bold'>
-      OK
-    </Button>
-  </Link>
-</div>
+                        <div
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                            }}
+                        >
+                            <Link to='/selesai'>
+                                <Button
+                                    style={{ width: '200px' }}
+                                    className='btn-warning text-white fw-bold'
+                                >
+                                    OK
+                                </Button>
+                            </Link>
+                        </div>
                     </Card.Body>
                 </Card>
             </div>

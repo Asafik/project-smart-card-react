@@ -17,31 +17,46 @@ const Home = () => {
                         {/* Kolom untuk teks di sebelah kiri */}
                         <Col md={6} className='d-flex align-items-center'>
                             <div>
-                                <h1 className='mb-4'>
-                                    Selamat Datang di Situs Kami
+                                <h1
+                                    style={{
+                                        fontWeight: 700,
+                                        fontSize: '72px',
+                                        lineHeight: '108px',
+
+                                    }}
+                                >
+                                    Smart Card
                                 </h1>
-                                <p>
-                                    Kami menyediakan solusi pintar untuk
-                                    kebutuhan Anda. Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna
-                                    aliqua.
+                                <p
+                                    style={{
+                                        fontWeight: 500,
+                                        fontSize: '24px',
+                                        lineHeight: '36px',
+                                        textAlign: 'justify',
+                                    }}
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt
                                 </p>
-                              <div>
-                                <Link to="/produk">
-                                <Button variant='warning text-white fw-bold'>
-                                    Beli Sekarang{' '}
-                                    <IoCartOutline className='me-0' style={{ 
-                                        width: '25px',
-                                        height: '25px',
-                                        backgroundColor: '#D4A601',
-                                        padding: '3px',
-                                        borderRadius: '10px', 
-                                        marginLeft: '10px'
-                                     }} />
-                                </Button>
-                                </Link>
-                              </div>
+                                <div>
+                                    <Link to='/produk'>
+                                        <Button variant='warning text-white fw-bold'>
+                                            Beli Sekarang{' '}
+                                            <IoCartOutline
+                                                className='me-0'
+                                                style={{
+                                                    width: '25px',
+                                                    height: '25px',
+                                                    backgroundColor: '#D4A601',
+                                                    padding: '3px',
+                                                    borderRadius: '10px',
+                                                    marginLeft: '10px',
+                                                }}
+                                            />
+                                        </Button>
+                                    </Link>
+                                </div>
                             </div>
                         </Col>
 
@@ -111,10 +126,12 @@ const Home = () => {
                                             Rp. 30.000
                                         </Card.Text>
                                         <div>
-                                        <Link to="/detail-produk">
-                                        <Button variant='warning text-white fw-bold'>Beli Sekarang</Button>
-                                        </Link>
-                                       </div>
+                                            <Link to='/detail-produk'>
+                                                <Button variant='warning text-white fw-bold'>
+                                                    Beli Sekarang
+                                                </Button>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </Card.Body>
                             </Card>
@@ -160,11 +177,13 @@ const Home = () => {
                                         >
                                             Rp. 30.000
                                         </Card.Text>
-                                       <div>
-                                        <Link to="/detail-produk">
-                                        <Button variant='warning text-white fw-bold'>Beli Sekarang</Button>
-                                        </Link>
-                                       </div>
+                                        <div>
+                                            <Link to='/detail-produk'>
+                                                <Button variant='warning text-white fw-bold'>
+                                                    Beli Sekarang
+                                                </Button>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </Card.Body>
                             </Card>
@@ -175,14 +194,16 @@ const Home = () => {
                                     className='text-center'
                                     style={{ marginTop: 50 }}
                                 >
-                                   <div>
-  <Link to="/produk">
-    <Button variant='warning text-white fw-bold'>
-      Lihat Semua Produk{' '}
-      <FaChevronRight style={{ marginLeft: 10 }} />
-    </Button>
-  </Link>
-</div>
+                                    <div>
+                                        <Link to='/produk'>
+                                            <Button variant='warning text-white fw-bold'>
+                                                Lihat Semua Produk{' '}
+                                                <FaChevronRight
+                                                    style={{ marginLeft: 10 }}
+                                                />
+                                            </Button>
+                                        </Link>
+                                    </div>
                                 </h1>
                             </Col>
                         </Row>
